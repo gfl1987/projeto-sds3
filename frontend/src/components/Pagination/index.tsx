@@ -5,7 +5,7 @@ type Props = {
     onPageChange: Function;
 }
 
-const Pagination = ( { page } : Props ) => {
+const Pagination = ( { page, onPageChange } : Props ) => {
 
     return (
 
@@ -13,18 +13,17 @@ const Pagination = ( { page } : Props ) => {
             <nav>
                 <ul className="pagination">
                     <li className={`page-item ${page.first ? 'disabled' : ''} `}>
-                        <button className="page-link" onClick={() => onPageChange(page.numver - 1)}>Anterior</button>
+                        <button className="page-link" onClick={() => onPageChange(page.number - 1)}>Anterior</button>
                     </li>
                     <li className="page-item disabled">
-                        <span className="page-link">{PageTransitionEvent.number + 1}</span>
+                        <span className="page-link">{page.number + 1}</span>
                     </li>
                     <li className={`page-item ${page.last ? 'disabled' : ''} `}>
-                        <button className="page-link" onClick={() => onPageChange(page.numver + 1)}>Próxima</button>
+                        <button className="page-link" onClick={() => onPageChange(page.number + 1)}>Próxima</button>
                     </li>
                 </ul>
             </nav>
         </div>
-
     )
 }
 
