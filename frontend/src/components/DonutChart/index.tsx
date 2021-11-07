@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Chart from 'react-apexcharts';
 import { BASE_URL } from 'utils/requests';
-import { SaleSum } from 'utils/requests';
+import { SaleSum } from 'types/sale';
 
 // Configuração gráfico de Rosca.
 
