@@ -10,6 +10,8 @@ import com.devsuperior.dsvendas.dto.SellerDTO;
 import com.devsuperior.dsvendas.entities.Seller;
 import com.devsuperior.dsvendas.repositories.SellerRepository;
 
+//Servicos da classe Seller
+
 @Service
 public class SellerService {
 
