@@ -23,7 +23,7 @@ const DataTable = () => {
             .then(response => {
                 setPage(response.data);
             });
-    }, [activePage]);
+    }, [activePage])
 
     const changePage = (index: number) => {
         setActivePage(index);
